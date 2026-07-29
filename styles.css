@@ -227,6 +227,11 @@ strong {
   transform: translateY(-1px);
 }
 
+.button-emoji {
+  margin-left: 8px;
+  font-family: Apple Color Emoji, Segoe UI Emoji, sans-serif;
+}
+
 .text-link {
   color: var(--signal);
   font-weight: 700;
