@@ -163,6 +163,13 @@ h1 {
   font-size: clamp(3.4rem, 9vw, 8.4rem);
 }
 
+.emoji {
+  display: inline-block;
+  font-family: Apple Color Emoji, Segoe UI Emoji, sans-serif;
+  font-size: 0.42em;
+  vertical-align: 0.18em;
+}
+
 h2 {
   margin-bottom: 22px;
   font-size: clamp(2.1rem, 4.6vw, 5rem);
@@ -469,6 +476,15 @@ strong {
   height: 54px;
   margin-bottom: 18px;
   border-radius: 50%;
+}
+
+.mini-kicker {
+  margin-bottom: 8px;
+  color: var(--ember);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .feature.wide img {
