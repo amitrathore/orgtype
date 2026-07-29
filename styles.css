@@ -519,6 +519,67 @@ strong {
   font-size: clamp(1.1rem, 1.6vw, 1.35rem);
 }
 
+.autonomy-section {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.72fr) 1fr;
+  gap: clamp(28px, 5vw, 70px);
+  align-items: center;
+  width: min(calc(100% - 32px), var(--max));
+  margin: 96px auto 0;
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(16, 19, 20, 0.58);
+}
+
+.autonomy-visual img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid rgba(255, 225, 166, 0.22);
+  border-radius: 8px;
+  box-shadow: 0 28px 84px rgba(0, 0, 0, 0.42);
+}
+
+.autonomy-copy > p:not(.kicker) {
+  color: var(--mist);
+  font-size: clamp(1.05rem, 1.5vw, 1.24rem);
+}
+
+.concept-stack {
+  display: grid;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.concept-stack article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid rgba(255, 225, 166, 0.16);
+  border-radius: 8px;
+  background: rgba(23, 27, 29, 0.72);
+}
+
+.concept-stack img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.concept-stack h3 {
+  color: var(--signal);
+}
+
+.concept-stack p:last-child {
+  margin-bottom: 0;
+}
+
+.inline-emoji {
+  font-family: Apple Color Emoji, Segoe UI Emoji, sans-serif;
+}
+
 .transform {
   display: grid;
   grid-template-columns: 1fr minmax(300px, 0.62fr);
@@ -562,6 +623,13 @@ footer p {
   margin: 0;
 }
 
+.footer-copy {
+  display: grid;
+  gap: 4px;
+  max-width: 680px;
+  text-align: right;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -599,6 +667,7 @@ footer p {
   .hero,
   .system-heading,
   .protocol-section,
+  .autonomy-section,
   .transform {
     grid-template-columns: 1fr;
   }
@@ -707,5 +776,17 @@ footer p {
   footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .autonomy-section {
+    padding: 22px;
+  }
+
+  .concept-stack article {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-copy {
+    text-align: left;
   }
 }
